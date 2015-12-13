@@ -1,0 +1,29 @@
+
+require:
+   path
+   fs
+
+install{@, options} =
+   fonts = Array! [options.fonts or {}]
+   if options.fonts.length === 0:
+      return
+   var url =
+      "//fonts.googleapis.com/css?family=" +
+         fonts.join{"|"}.replace{R.g" ", "+"}
+   @register-resources with {
+      "style/google-fonts::{url}" => {
+         path = url
+         path-is-url = true
+         type = .css
+         method = .head
+      }
+   }
+
+main{*match} =
+   {@, options = {=}} when @is-quaint-engine ->
+      install{@, options}
+   {options = {=}} ->
+      {@} -> main{@, options}
+
+provide = main
+
