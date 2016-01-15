@@ -41,7 +41,7 @@ An array of font names.
 For each font you can also add styles (bold, italic) and character
 sets you want (greek, cyrillic, etc). For example:
 
-   "Open Sans:400,400italic,700&subset=latin,greek"
+    "Open Sans:400,400italic,700&subset=latin,greek"
 
 will load the Open Sans font with the normal (400), normal italic, and
 bold (700) styles, and the latin and greek character sets. Note
@@ -50,7 +50,7 @@ download, by a factor equal to the number of possible combinations:
 just "Open Sans" is about 15 KB, but the above set is 90 KB (but it
 will look nicer).
 
-Browse [Google Fonts]@@https://www.google.com/fonts for the list of
+Browse [Google Fonts](https://www.google.com/fonts) for the list of
 fonts available. If you add them to your collection and then click
 "Use" at the bottom, you get to pick the styles and character sets and
 you can copy/paste the code given. Not all fonts have all possible
