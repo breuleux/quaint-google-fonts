@@ -8,7 +8,9 @@ your pages.
 
 ## Install
 
-    npm install quaint-google-fonts -g
+    quaint --setup google-fonts
+
+Follow the instructions.
 
 
 ## Sample configuration
@@ -44,11 +46,11 @@ sets you want (greek, cyrillic, etc). For example:
     "Open Sans:400,400italic,700&subset=latin,greek"
 
 will load the Open Sans font with the normal (400), normal italic, and
-bold (700) styles, and the latin and greek character sets. Note
-that each styles and subset you add will add to the size of the
-download, by a factor equal to the number of possible combinations:
-just "Open Sans" is about 15 KB, but the above set is 90 KB (but it
-will look nicer).
+bold (700) styles, and the latin and greek character sets. Note that
+each style and subset you add will add to the size of the download, by
+a factor equal to the number of possible combinations: just "Open
+Sans" is about 15 KB, but the above set is 90 KB (but it will look
+nicer).
 
 Browse [Google Fonts](https://www.google.com/fonts) for the list of
 fonts available. If you add them to your collection and then click
