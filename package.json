@@ -11,7 +11,7 @@
     "quaint",
     "quaint-plugin",
     "google-fonts",
-    "font"
+    "fonts"
   ],
   "author": "Olivier Breuleux",
   "license": "MIT",
@@ -19,7 +19,7 @@
   "dependencies": {
     "chalk": "^1.1.1",
     "earlgrey-runtime": ">=0.0.11",
-    "inquirer-promise": "0.0.1"
+    "inquirer-promise": ">=0.0.3"
   },
   "devDependencies": {
     "earlgrey": ">=0.0.13",
