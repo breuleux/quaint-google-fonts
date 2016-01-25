@@ -1,0 +1,25 @@
+
+require:
+   inquirer-promise as inq
+   chalk
+
+
+async quaint-setup{config, instructions} =
+   url = "https://github.com/breuleux/quaint-google-fonts"
+   print 'Plugin documentation: {chalk.bold.cyan{url}}'
+
+   data = config.plugins["google-fonts"] or= {=}
+   data.fonts or= {}
+
+   var first = true
+   while true:
+      new-font = await inq.input with
+         if{first, "Enter a font name to load:", "Another font?:"}
+      first = false
+      if new-font:
+         data.fonts.push{new-font}
+      else:
+         break
+
+
+provide = quaint-setup
